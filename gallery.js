@@ -20,12 +20,14 @@ function isColored(current) {
     console.log("isColored event triggered");
     current.style.filter = "grayscale(0%)";
     current.style.borderColor = "red";
+    upDate(current);
 }
 
 function resetColor(current) {
     console.log("resetColor event triggered");
     current.style.filter = "grayscale(100%)";
     current.style.borderColor = "black";
+    unDo(current);
 }
 
 /* Adds a tabindex to each fo the preview images */
