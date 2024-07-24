@@ -1,13 +1,4 @@
-/*Name this external file gallery.js*/
-
 function upDate(previewPic){
- /* In this function you should 
-    1) change the url for the background image of the div with the id = "image" 
-    to the source file of the preview image
-    
-    2) Change the text  of the div with the id = "image" 
-    to the alt text of the preview image 
-    */
     console.log("upDate event triggered");
     console.log(previewPic.alt);
     console.log(previewPic.src);
@@ -17,15 +8,32 @@ function upDate(previewPic){
 	}
 
 function unDo(){
-     /* In this function you should 
-    1) Update the url for the background image of the div with the id = "image" 
-    back to the orginal-image.  You can use the css code to see what that original URL was
-    
-    2) Change the text  of the div with the id = "image" 
-    back to the original text.  You can use the html code to see what that original text was
-    */
     console.log("unDo event triggered");
     document.querySelector("#image").style.backgroundImage = '';
     document.querySelector("#image").innerHTML = "Hover over an image below to display here.";
 		
 	}
+
+/* Changes style when images preview windows are in focus */
+
+function isColored(current) {
+    console.log("isColored event triggered");
+    current.style.filter = "grayscale(0%)";
+    current.style.borderColor = "red";
+}
+
+function resetColor(current) {
+    console.log("resetColor event triggered");
+    current.style.filter = "grayscale(100%)";
+    current.style.borderColor = "black";
+}
+
+/* Adds a tabindex to each fo the preview images */
+
+function addTab() {
+    console.log("addTab function triggered")
+    previewImages = document.querySelectorAll(".preview img");
+    for (let i = 0; i < previewImages.length; i++) {
+        previewImages[i].setAttribute("tabindex", i + 1);
+    }
+}
