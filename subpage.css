@@ -1,0 +1,195 @@
+.intro {
+    padding: 40px 40px 0 40px;
+}
+
+.intro a {
+    color: inherit;
+
+}
+
+.intro a:hover {
+    background-color: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vh;
+    padding-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    color: rgb(222, 225, 241);
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+a:hover {
+    text-decoration: none;
+  }
+  
+a:hover:not(.active) {
+    background-color: #dfd2d2;
+  }
+  
+  .active {
+    background-color: #53938f;
+  }
+
+
+.animal_display {
+    /* Adding a dark background effect to the image.*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* To make sure the link is only on the image */
+    text-align: center;
+  }
+
+  .animal_display img {
+    vertical-align: middle;
+    border-radius:50%;
+    width:30%;
+    padding: 3vh;
+    transition: width 2s;
+    background-color: white;
+    margin: 10px;
+ }
+
+ .animal_display img:hover {
+    width:40%;
+ }
+
+
+
+ .animal_display p {
+   margin: auto;
+   width: 30%;
+   text-align: center;
+   background-color: white;
+   border: 2px solid black;
+   border-radius: 10%;
+   padding-top: 2vh;
+   padding-bottom: 2vh;
+   margin-top: 2vh;
+   margin-bottom: 4vh;
+ }
+
+ .text, .example_intro {
+    padding: 40px 20px 15px 20px;
+ }
+
+ .example_detail {
+    padding: 5px 20px 15px 20px;
+ }
+
+.text p, .example_intro p, .example_detail p {
+    padding-top: 15px;
+    line-height: 170%;
+    font-size: 0.8em;
+}
+
+.example_detail p {
+    padding-bottom: 5px;;
+}
+
+.example_intro p {
+    padding-bottom: 5px;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
+.carousel_title {
+    padding-bottom: 0.4rem;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.container {
+    padding-bottom: 10px;
+}
+
+.song {
+    padding-left: 10vw;
+}
+
+
+@media screen and (min-width: 730px) {
+    
+    .unit1 {
+        float: left;
+        width: 60%;
+    }
+
+    .unit2 {
+        float: right;
+        width: 40%;
+        padding-top: 30px;
+        padding-right:10px;
+    }
+
+    footer {
+        clear: both;
+    }
+
+    .carousel_title {
+        display: none;
+    }
+
+    .text {
+        float: left;
+        width: 40%;
+    }
+
+    .animal_display {
+        float:right;
+        width:60%;
+        height:60vh;
+    }
+
+    .unit1 {
+        clear: both;
+    }
+
+    .tablet {
+        max-height: 100vh;
+    }
+
+    .animal_display img {
+        margin-top: 90px;
+    }
+
+    .container {
+        width:100%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .animal_display img {
+        width: 25%;
+        transition: width 2s;
+    }
+    
+    
+    .animal_display img:hover {
+        width:30%;
+     }
+
+}

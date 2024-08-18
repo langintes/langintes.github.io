@@ -1,0 +1,186 @@
+/* The hero image */
+.options {
+    /* Adding a dark background effect to the image.*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* To make sure the link is only on the image */
+    text-align: center;
+  }
+  
+  .options img {
+     max-width:100%;
+     max-height:100%;
+     vertical-align: middle;
+     border-radius:50%;
+     width:30%;
+     background-color: white;
+     padding: 5px;
+  }
+
+  .options p {
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .options div {
+    padding: 10px 0 10px 0;
+  }
+
+/* For the aside section */
+  
+aside {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+aside p {
+    padding-top: 10px;
+    line-height: 130%;
+}
+
+/* aside .button a {
+    background-color: rgb(233, 233, 240);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+
+} */
+
+
+aside .button {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+aside .button a {
+  border: 2px solid black;
+  padding: 6px;
+  margin-right: 3px;
+  color: black;
+  font-size: 0.8em;
+}
+
+aside .button a:hover {
+  background-color: #dda448ff;
+  cursor: pointer;
+  color: white;
+}
+
+li {
+    margin: 3px;
+    line-height: 150%;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+ul {
+    padding-top: 15px;
+}
+
+.laptop_intro {
+    display:none;
+}
+
+.item img {
+    transition: width 2s;
+}
+
+.item img:hover {
+    width:40%;
+}
+
+@media screen and (min-width: 730px) {
+    .options {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+      }
+    
+    .options img {
+        width: 20vw;
+    }
+
+    .options p {
+        width: 20vw;
+    }
+    
+    .item:last-child {
+        grid-column: 1 / span 2;
+      }
+
+   .item img:hover {
+       width:35vh;
+ }
+
+}
+
+@media screen and (min-width:1024px) {
+    .options {
+        position: relative;
+        box-sizing: border-box;
+        height:100vh;
+        padding-top: 40px;
+    }
+
+    .options img {
+        width: 15vw;
+        padding: 7px;
+    }
+
+    .options p {
+        display:none;
+    }
+    
+    .laptop_intro {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        height: 100vh;
+        float: left;
+        box-sizing: border-box;
+        width: 30vw;
+        padding: 30px; 
+        background-color: #dda448ff;
+    }
+
+    .laptop_intro p {
+        padding-top: 15px;
+        line-height: 150%;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    aside {
+        clear:both;
+    }
+
+    .wrapper {
+        height: 100vh;
+    }
+
+
+}
+
