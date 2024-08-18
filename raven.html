@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ravens in Icelandic songs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/subpage.css">
+    <!-- For the image carousel -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body onload="test()">
+    <div class="contain">
+        <header>
+          <a href="/index.html"><i class="fa-solid fa-horse"></i></a>
+            <div class = "intro">
+                <h1><a href="/index.html">Animals in Icelandic songs</a></h1> 
+                <p>Many traditional Icelandic songs feature local animals, hinting at their relationship with humans and the mythology around them.</p> 
+                <p>This page covers a few that have left a mark on Icelandic culture.</p>
+            </div>
+            <nav>
+                <a class="active" href="">Raven</a>
+                <a href="/fox.html">Fox</a>
+                <a href="/horse.html">Horse</a>
+            </nav>
+        </header>
+        <main>
+            <section class="tablet">
+                <div class="animal_display">
+                    <img src="images/raven.png" alt="Raven icon">
+                </div>
+                <div class="text">
+                    <h2>Ravens in Icelandic folksongs</h2>
+                      <p>Ravens feature in Icelandic history since the very beginning. According to the <em>Book of Settlement</em>, one of Iceland's first settlers, a Norwegian man named Hrafna-Flóki, or <em>Raven-Flóki</em>, used the flying direction of ravens to deduce where he would find the land, leading him to Iceland.</p>
+                      <p>Ravens feature in many traditional Icelandic songs, where there's often an air of mystery and menace around them.</p>
+                </div>
+            </section>
+            <section class="unit1">
+                <div class="example_intro">
+                    <h2>A song about ravens</h2>
+                    <p class="subtext">Krummi svaf í klettagjá</p>
+                    <button onclick="ravenSong(this)">Play song</button>
+                </div>
+                <div class="example_detail">
+                    <p>The title of the song translates as "A raven slept in a gorge". On a cold winter night. His frozen beak can be seen popping up from the ground before day breaks.</p>
+                    <p>Another verse has a raven calling the others to feast on a dead animal he has found on a frozen field.</p>
+                    <button onclick="ravenLyrics()">See lyrics</button>
+                </div>
+            </section>
+            <section class="unit2">
+                <div class="container">
+                    <h2 class="carousel_title">Photo gallery</h2>  
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                      </ol>
+                  
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/raven1.jpg" alt="A close-up image of a raven on a wooden beam">
+                        </div>
+                  
+                        <div class="item">
+                          <img src="images/raven2.jpg" alt="A raven flying in a cloudy sky">
+                        </div>
+                      
+                        <div class="item">
+                          <img src="images/raven3.jpg" alt="A raven flying low above ground in autumn colors">
+                        </div>
+
+                      <div class="item">
+                        <img src="images/raven4.jpg" alt="A close-up image of a raven sitting on a branch">
+                      </div>
+                    </div>
+                  
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Copyright 2024: Óskar Völundarson. Free animal icons from <a href="https://icons8.com/">icons8.com</a></p>
+    </footer>
+	<script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/5fb121b09d.js" crossorigin="anonymous"></script>
+  </body>
+</html>

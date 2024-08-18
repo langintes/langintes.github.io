@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The fox in Icelandic songs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/subpage.css">
+    <!-- For the image carousel -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body onload="test()">
+    <div class="contain">
+        <header>
+          <a href="/index.html"><i class="fa-solid fa-horse"></i></a>
+            <div class = "intro">
+                <h1><a href="/index.html">Animals in Icelandic songs</a></h1> 
+                <p>Many traditional Icelandic songs feature local animals, hinting at their relationship with humans and the mythology around them.</p> 
+                <p>This page covers a few that have left a mark on Icelandic culture.</p>
+            </div>
+            <nav>
+                <a href="/raven.html">Raven</a>
+                <a class="active" href="">Fox</a>
+                <a href="/horse.html">Horse</a>
+            </nav>
+        </header>
+        <main>
+            <section class="tablet">
+                <div class="animal_display">
+                    <img src="images/fox.png" alt="Fox icon">
+                </div>
+                <div class="text">
+                    <h2>The fox in Icelandic folksongs</h2>
+                      <p>The arctic fox was the only mammal living in Iceland when human settlers arrived in the ninth century.</p>
+                    <p>He mainly eats birds and insects but has been known to kill lambs also.</p>
+                </div>
+            </section>
+            <section class="unit1">
+                <div class="example_intro">
+                    <h2>A song about a fox</h2>
+                    <p class="subtext">Siggi var úti</p>
+                    <button onclick="foxSong(this)">Play song</button>
+                </div>
+                <div class="example_detail">
+                    <p>In the song, a young boy named Siggi is out in the fields looking after some sheep.</p> 
+                    <p>Siggi is frigthened when a scary fox comes along, leading him to run for it, leaving the sheep he was supposed to look out for.</p>
+                    <button onclick="foxLyrics()">See lyrics</button>
+                </div>
+            </section>
+            <section class="unit2">
+                <div class="container">
+                    <h2 class="carousel_title">Photo gallery</h2>  
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                  
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/fox1.jpg" alt="An arctic fox on a snowy ground">
+                        </div>
+                  
+                        <div class="item">
+                          <img src="images/fox2.jpg" alt="A river gorge with high cliffs on each side">
+                        </div>
+                      
+                        <div class="item">
+                          <img src="images/fox3.jpg" alt="An arctic fox in winter looks directly at the camera">
+                        </div>
+                    </div>
+                  
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Copyright 2024: Óskar Völundarson. Free animal icons from <a href="https://icons8.com/">icons8.com</a></p>
+    </footer>
+	<script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/5fb121b09d.js" crossorigin="anonymous"></script>
+  </body>
+</html>
